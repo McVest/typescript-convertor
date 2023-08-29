@@ -16,10 +16,11 @@
     "url": "https://github.com/McVest/typescript-convertor/issues"
   },
   "homepage": "https://github.com/McVest/typescript-convertor#readme",
+  "type": "commonjs",
   "dependencies": {
-    "inquirer": "^9.2.10"
+    "inquirer": "^8.2.0"
   },
   "devDependencies": {
-    "@types/inquirer": "^9.0.3"
+    "@types/inquirer": "^8.2.0"
   }
 }
