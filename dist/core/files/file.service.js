@@ -29,7 +29,7 @@ class FileService {
             path = (0, path_1.join)(__dirname + '/' + path);
         return (0, path_1.join)((0, path_1.dirname)(path) + '/' + name + '.' + ext);
     }
-    deleteFileExists(path) {
+    deleteFileIfExists(path) {
         return __awaiter(this, void 0, void 0, function* () {
             if (yield this.isExist(path)) {
                 fs_1.promises.unlink(path);
