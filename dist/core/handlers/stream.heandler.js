@@ -7,10 +7,10 @@ class StreamHandler {
     }
     processOutput(stream) {
         stream.stdout.on('data', (data) => {
-            this.logger.log(data);
+            this.logger.log(data.toString());
         });
         stream.stderr.on('data', (data) => {
-            this.logger.error(data);
+            this.logger.error(data.toString());
         });
         stream.on('close', (data) => {
             this.logger.end();
